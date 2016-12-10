@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles/style-login-form.css" type="text/css">
+        <script src="scripts/jquery-3.0.0.min.js"></script>
+        <script src="scripts/RegisterAndLogin.js"></script>
+
+</head>
+<header>
+
+<!--TITLE-->
+
+        <div class="blog-title">
+            <h1><a href="index.html"> МОЕТО ВИРТУАЛНО УЧИЛИЩЕ </a> </h1>
+        </div>
+</header>
+<body background="images/back1.jpg">
+
+<!--LOGIN FORM-->
+
+        <div class="divTitleLogin">
+                <div id="infoBoxBG" onclick="$(this).hide()"></div>
+                <div id="errorBoxBG" onclick="$(this).hide()"></div>
+                <h1 class="loginTitle">ВХОД</h1>
+        </div>
+        <div class="loginForm">
+            <form id="formLogin">
+                <span class="sectionsForm"> ПОТРЕБИТЕЛ: </span>
+                <input type="text" id="loginUser" placeholder="Потребителско име:" style="font-size: 20pt"><br>
+                <br>
+                <span  class="sectionsForm">ПАРОЛА:</span>
+                <input type="password" id="loginPass" placeholder="Парола:" style="font-size: 20pt" width="35pt"><br>
+                <br><br><br><br>
+                <span class="signInText" class="sectionsForm"><a href="register-form.html"> РЕГИСТРАЦИЯ </a> </span>
+                <button type="submit" onclick="login()" style="font-size: 20pt" width="25pt">ВХОД</button>
+            </form>
+        </div>
+</body>
+</html>
