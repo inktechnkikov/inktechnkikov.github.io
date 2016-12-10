@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+}
+
+
+
+.description {
+    width: 800px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.description>h3,p {
+    text-align: center;
+}
+
+.key {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 3px 6px 3px 6px;
+    background: #eeeeee;
+}
