@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School-Profile</title>
+    <link rel="stylesheet" href="styles/style-student-page.css" type="text/css">
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/RegisterAndLogin.js"></script>
+    <script src="scripts/teachersSetAndViewHomework.js"></script>
+    <script src="scripts/studentsUploadHomeworks.js"></script>
+</head>
+<body>
+
+<!--NAVIGATION-->
+
+        <header style="background:url(images/students.gif)">
+                <div class="buttonsContent">
+                        <a href="base-form.html" id="linkHome" >HOME</a>
+                        <a href="teacher-page.html" id="linkTeachers"  >TEACHERS</a>
+                        <a href="student-page.html" id="linkStudents" class="buttonHome">STUDENTS</a>
+                        <a href="homework-page.html" id="linkHomework">HOMEWORK</a>
+                        <a href="resources-page.html" id="linkResources">RESOURCES</a>
+
+                        <input type="image" src="images/logout.png" alt="Submit" onclick="logout()"
+                             width="48" height="48"
+                             value="LogOut" title="EXIT">
+            </div>
+
+                <div >
+
+<!--TITLES-->
+
+                    <div class="blog-title">
+
+                        <h1>MY VIRTUAL SCHOOL</h1>
+                    </div>
+                    <h3 class="page-title" >STUDENTS</h3>
+                </div>
+
+        </header>
+
+        <main>
+
+            <h4>
+                Study while others are sleeping,
+                work while others are loafing, prepare while others are
+                playing, and dream while others are wishing.
+            </h4>
+            <p>
+                You have to check the homework down below and if you find something difficult
+                chek the "RESOURCES" section.
+            </p>
+            <div id="infoStudent" onclick="$(this).hide()"></div>
+            <div id="errorStudent" onclick="$(this).hide()"></div>
+<!--SUBMIT HOMEWORK FORM-->
+
+
+            <div class="submitHomework">
+                        NAME: <input type="text" id="studentName" placeholder="name:">
+                    <br><br>
+                        THEME/SUBJECT: <input type="text" id="themeOfHomework" placeholder="theme:">
+                    <br><br>
+                        HOMEWORK: <textarea type="text" id="descriptionOfHomeWork"> </textarea>
+                    <br><br><br><br><br>
+
+                <br>
+
+                <button type="button" id="showHomeWorkStudents">Show Homework</button>
+                <button type="button" id="hideHomeworksStudents">Hide homework</button>
+                <button type="button" onclick="studentsValidation()">Upload Homework</button><br>
+
+            </div>
+            <img src="images/GraduationGifts.jpg" class="image">
+            <main>
+                <p> HOMEWORK </p>
+                <div class="fields" id="fieldInStudents" style="background:url(images/laptop.jpg)"></div>
+
+            </main>
+
+<!--
+                <h3 class="forumTitle">THE SECRET FORUM</h3>
+
+
+
+            <div style="background:url(images/classroom.jpg) repeat-y" class="forumPart">
+                <div class="submitPost">
+                            NAME: <input type="text">
+                            <br><br>
+                            ABOUT <input type="text">
+                            <br><br>
+                             <textarea type="text"> </textarea>
+                            <br><br><br><br><br>
+                            <button type="submit"> Publish </button>
+                 </div>
+
+
+
+                <div class="posts">
+                        No recent posts <br>
+                        AUTHOR:
+                        <br><br>
+                        ABOUT
+                        <br><br>
+                        CONTENT
+                        <p class="content"></p>
+                </div>
+            </div>
+        </main>
+ -->
+<!--FOOTER-->
+
+        <footer>
+            Contact us
+            <br>
+            <br>
+            <div class="footerImg">
+                <a href="https://github.com/BZIvanov/School-Blog" class="footerImg"> <img src="images/github-512.png"> </a>
+                <a href="https://www.facebook.com/groups/789752401160176/" class="footerImg"><img src="images/icon-facebook.png"></a>
+                <a href="https://twitter.com/?request_context=signup " class="footerImg"><img src="images/Twitterbird.png"></a>
+                <a href="https://plus.google.com/117078375229903786708/posts" class="footerImg"> <img src="images/google-plus-icon.png"></a>
+            </div>
+        </footer>
+
+<!--scroll to top button-->
+
+            <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+</body>
+</html>

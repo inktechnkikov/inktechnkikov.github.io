@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School-Profile</title>
+    <link rel="stylesheet" href="styles/home.css" type="text/css">
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/RegisterAndLogin.js"></script>
+</head>
+<body>
+    <header style="background:url(images/home.gif)">
+
+
+<!--NAVIGATION-->
+
+                <div class="buttonsContent">
+                        <a href="base-form.html" id="linkHome" class="buttonHome">HOME</a>
+                        <a href="teacher-page.html" id="linkTeachers">TEACHERS</a>
+                        <a href="student-page.html" id="linkStudents">STUDENTS</a>
+                        <a href="homework-page.html" id="linkHomework">HOMEWORK</a>
+                        <a href="resources-page.html" id="linkResources">RESOURCES</a>
+                        <input type="image" src="images/logout.png" alt="Submit" onclick="logout()"
+                           width="48" height="48"
+                           value="LogOut" title="EXIT">
+                </div>
+        <div id="infoBox" onclick="$(this).hide()"></div>
+        <div id="errorBox" onclick="$(this).hide()"></div>
+
+<!--TITLES-->
+
+            <div >
+                <div>
+                    <div class="blog-title">
+                        <h1>MY VIRTUAL SCHOOL</h1>
+                    </div>
+                    <h3 class="page-title" >HOME</h3>
+                </div>
+            </div>
+
+    </header>
+
+
+<!--IMAGES-->
+
+        <main>
+            <div>
+                <div class="index-page-content" >ABOUT US</div>
+                <img src="images/Icon-set.jpg" class="images-aboutUs">
+                <p class="text-aboutUs" >
+
+                    The system " My virtual school " can be
+                    used by both teachers and students.
+                    It would be in great use for all
+                    levels of education in Bulgaria.
+                    After you sign in,you would be
+                    able to see the interesting
+                    modules, an electronic system for homework
+                    and many useful resources.
+
+                </p>
+            </div>
+
+            <!--FOR TEACHERS-->
+
+            <div>
+                <div  class="index-page-content"  > FOR TEACHERS  </div>
+                <img src="images/students.png" class="image-teachers">
+
+                <p class="text-teachers">
+                    <br><br>
+                    Teachers would be able to post
+                    homework for student,see and check their work.
+                    The should take notes and tell the student's mark at
+                    school.
+
+                </p>
+            </div>
+
+            <div>
+                <div class="index-page-content"> FOR STUDENTS </div>
+                <img src="images/studentss.jpg" class="images-students">
+
+                <!--FOR STUDENTS-->
+
+                <p  class="text-students">
+                    There are many opportunities for the
+                    students as well. They will be able
+                    to follow the schedule with their
+                    homework, do it on their computers
+                    and then quickly send it
+                    electronically to their teacher.
+                </p>
+            </div>
+        </main>
+
+<!--scroll to top button-->
+
+            <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles/style-register-form.css" type="text/css">
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/RegisterAndLogin.js"></script>
+</head>
+<header>
+
+<!--TITLE-->
+
+    <div class="blog-title">
+        <h1><a href="index.html"> MY VIRTUAL SCHOOL </a> </h1>
+    </div>
+</header>
+<body background="images/back1.jpg" >
+
+    <div class=" divRegisterTitle">
+        <div id="infoBox" onclick="$(this).hide()"></div>
+      <div id="errorBox" onclick="$(this).hide()">
+        <h1 class="regiserTitle"> Register </h1>
+    </div>
+
+<!--REGISTER FORM-->
+
+    <div class="registerForm">
+        <form id="formRegister">
+                <span style="padding: 0 100px;" class="sectionsForm">Full name:</span>
+                <input type="text" id="fullName" placeholder="full name:" required = "true"  style="font-size: 20pt"> <br><br>
+                <span style="padding: 0 102px;" class="sectionsForm "> Username:</span>
+                <input type="text" id="userName" placeholder="username:" required = "true"  style="font-size: 20pt"> <br><br>
+                <span style="padding: 0 102px;" class="sectionsForm ">Password:</span>
+                <input type="password" id="passInput" placeholder="password:" required = "true" style="font-size: 20pt"> <br><br>
+                <span style="padding: 0 20px;" class="sectionsForm">Confirm password:</span>
+                <input type="password" id="passwordConfirm" placeholder="password again:" required = "true" style="font-size: 20pt"> <br><br>
+
+<!--RADIO BUTTONS-->
+
+                <div class="radioForm">
+                        <br>
+                        <input type="radio" value="teacher" name="check" checked > I am a teacher
+                        <br>
+                        <input type="radio" value="student" name="check"  > I am a student
+                </div>
+
+<!--LOGIN-SING IN BUTTONS-->
+
+                <span class="logInText" class="sectionsForm"><a href="login-form.html"> Log In </a> </span>
+                <button type="button" onclick="register()" style="font-size: 20pt" width="25pt">Sign In</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

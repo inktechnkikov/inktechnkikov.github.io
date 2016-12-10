@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School</title>
+        <script src="scripts/jquery-3.0.0.min.js"></script>
+        <link rel="stylesheet" href="styles/styles.css" type="text/css">
+</head>
+
+<body>
+<!--SIDE BAR -->
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="teacher-page.html">Учители</a>
+        <a href="student-page.html">Ученици</a>
+        <a href="homework-page.html">Домашни</a>
+        <a href="resources-page.html">Ресурси</a>
+        <br><br>
+        <a href="login-form.html">Вход</a>
+        <a href="register-form.html">Регистрация</a>
+
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776; open</span>
+    </div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.1)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
+
+
+<!-- TITLE -->
+
+    <header style="background:url(images/back1.jpg)">
+                <br><br>
+            <div  class="background" >
+                    <div class="wrapper">
+                        <a href="#" class="choice">BG</a>
+                        <a href="../EnglishVersion/index.html" class="choice">EN</a> <br><br>
+                            <div class="login-button" style="outline: 0">
+                                    <a href="login-form.html">Вход</a>
+                                    <a href="register-form.html">Регистрация</a><br><br>
+                            </div>
+                    </div>
+                   <div class="blog-title">
+                            <h1>МОЕТО ВИРТУАЛНО УЧИЛИЩЕ</h1>
+                    </div>
+            </div>
+            <div class="buttonsContent">
+                             <a href="#aboutUs">ЗА НАС</a>
+                             <a href="#aboutTeachers">ЗА УЧИТЕЛИТЕ</a>
+                <a href="#aboutStudents">ЗА УЧЕНИЦИ</a>
+            </div>
+    </header>
+
+<!--ABOUT US-->
+
+            <div>
+                        <div class="index-page-content" ><a name="aboutUs" style="color:#543925">ЗА НАС</a></div>
+                        <img src="images/Icon-set.jpg" class="images-aboutUs">
+                        <p class="text-aboutUs" >
+
+                            Системата  „Моето виртуално училище“ е предназначена
+                            както за ученици,така и за учители. Би била от голяма
+                            полза за всички степени на обучение в България.
+                            След като се регистрирате ще имате възможност
+                            да видите интересните модули,които включват
+                            страници за учители и ученици,
+                            електронна система за предаване на домашни и много полезни ресурси.
+
+                        </p>
+            </div>
+
+<!--FOR TEACHERS-->
+
+            <div>
+                       <div  class="index-page-content"><a name="aboutTeachers" style="color:#543925"> ЗА УЧИТЕЛИТЕ  </a></div>
+                        <img src="images/students.png" class="image-teachers">
+                        <p class="text-teachers">
+                            <br><br>
+                            Учителите ще имат възможността да
+                            публикуват домашна работа за учениците и видят,
+                            и преценят как сa се справили със задачата.
+                        </p>
+            </div>
+
+            <div>
+                <div class="index-page-content"> ЗА УЧЕНИЦИТЕ </div>
+                <img src="images/studentss.jpg" class="images-students">
+
+<!--FOR STUDENTS-->
+
+                <p> <a name="aboutStudents" class="text-students">
+                    Предоставени са  много възможности и за
+                    учениците. Те ще могат да следят графика с
+                    домашните си работи, да я напишат на компютъра
+                    и бързо да я изпратят на учителя на електронен носител.
+                    След предаване на домашната,тя ще бъде прегледана от учител и съответно ще получи
+                    оценка в училище.
+                </a> </p>
+            </div>
+
+        <footer>
+            (c) W h a t s W r o n g
+        </footer>
+
+ <!--scroll to top button-->
+        <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+
+    <script>
+        $(document).ready(function () {
+            let offset = 220;
+            let duration = 500;
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset) {
+                    $('#scrollToTop').fadeIn(duration);
+                } else {
+                    $('#scrollToTop').fadeOut(duration);
+                }
+            });
+            $('#scrollToTop').click(function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
+
+

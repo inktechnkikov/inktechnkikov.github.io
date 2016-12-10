@@ -1,0 +1,278 @@
+body{
+    background: #FFE8C6;
+}
+header{
+    background:#80CD8B;;
+    height: auto;
+    width: 101.45%;
+    margin: -20px;
+}
+.blog-title{
+    color: white;
+    font-family: Lucida Sans Unicode;
+    margin: 100px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 0.5px solid #fff;
+    width: 75%;
+
+}
+.page-title{
+    color: white;
+    font-family: Lucida Sans Unicode;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    width: 75%;
+}
+h4{
+    display: block;
+    border-bottom: 0.1px solid #5e5e5e;
+    color: #707070;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 900px;
+    text-align: center;
+}
+p{
+    display: block;
+    color: #707070;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+
+}
+a:hover{
+    border-bottom: 1px solid #fff;
+}
+.buttonsContent{
+    margin: -25px auto;
+    display: block;
+    padding: 10px;
+    background: #7F7E7E;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+
+
+}
+.buttonsContent a {
+    margin: 30px;
+
+}
+.buttonsContent a:hover {
+    border-bottom: 1px solid #fff;
+    padding: -3px;
+}
+button{
+    background: #424147;
+    text-decoration: none;
+    color:#fff;
+}
+.buttonLogout{
+    float: right;
+    margin-top:  40px ;
+    margin-right: 20px;
+}
+.buttonHome{
+    border-bottom: 1px solid #fff;
+    font-size:22px
+}
+input[type=image]{
+    margin: 20px;
+    float:right;
+}
+.image{
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+div#showStHome.homeworksFromSt ul{
+    font-size: 40px;
+    font-family:"Microsoft Yi Baiti";
+    color:#fff;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    list-style-type: none;
+    width: auto;
+    border-bottom:  1px solid #ffffff;
+    background: transparent;
+
+}
+div#showStHome.homeworksFromSt li{
+    width: auto;
+    font-size: 40px;
+    padding: 20px;
+    margin: 0px auto;
+    list-style-type: none;
+    color: #fff;
+    padding-left: 50px;
+
+
+
+}
+div#showStHome.homeworksFromSt div{
+    width: auto;
+    font-size: 40px;
+    padding: 20px;
+    margin: 65px auto;
+    list-style-type: none;
+    color: #fff;
+    padding-left: 50px;
+    background-image: url("../images/books-1.jpg")
+
+}
+
+footer{
+    background: #7F7E7E;
+    height: 200px;
+    margin-bottom: -200px;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-family: Lucida Sans Unicode;
+
+}
+#errorhomeWork {
+    font-size:35px;
+    border-bottom: 2px solid red;
+    display: none;
+    /*background: #AAA;*/
+    padding: 3px;
+    border-radius: 3px;
+    width: 20%;
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;;
+    opacity: 0.0;
+    animation: porta 2s 1 forwards;
+    -webkit-animation: porta 2s 1 forwards;
+}
+.blog-title:nth-of-type(2){
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+@keyframes porta {
+    0%{
+        transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        transform: rotateY(0deg) translateY(0%);
+        opacity: 4.0;
+    }
+}
+
+@-webkit-keyframes porta {
+    0%{
+        -webkit-transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        -webkit-transform: rotateY(0deg) translateY(0%);
+        opacity: 1.0;
+    }
+}
+
+@keyframes reseta {
+    0%{}
+    50%{}
+}
+
+@-webkit-keyframes reseta {
+    0%{}
+    50%{}
+}
+
+
+#LogOutHomeWork {
+    font-size: 35px;
+    border-bottom: 2px solid green;
+    display: none;
+    padding: 3px;
+    border-radius: 3px;
+    width: 40%;
+    margin: 100px auto;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.0;
+    animation: porta 2s 1 forwards;
+    -webkit-animation: porta 2s 1 forwards;
+}
+.blog-title:nth-of-type(2){
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+@keyframes porta {
+    0%{
+        transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        transform: rotateY(0deg) translateY(0%);
+        opacity: 4.0;
+    }
+}
+
+@-webkit-keyframes porta {
+    0%{
+        -webkit-transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        -webkit-transform: rotateY(0deg) translateY(0%);
+        opacity: 1.0;
+    }
+}
+
+@keyframes reseta {
+    0%{}
+    50%{}
+}
+
+@-webkit-keyframes reseta {
+    0%{}
+    50%{}
+}
+
+.footerImg{
+    padding: 0px 20px;
+}
+.footerImg a:hover{
+    border: none;
+}
+.button-to-top:hover{
+      bacground-color: #ed702b;
+      text-decoration: none;  }  
+ 
+.button-to-top {
+     display: none;  
+     position: fixed;   
+     bottom: 1rem;   
+     right:1rem;  
+     width:3.2rem;  
+     height: 3.2rem;  
+     line-height:3.0rem;   
+     font-size:1.4rem;   
+     color:#fff;  
+      background-color: rgba(0,0,0,0.3);  
+      text-decoration: none;   
+      border-radius: 3.2rem;   
+      text-align: center;   
+      cursor: pointer; 
+ }

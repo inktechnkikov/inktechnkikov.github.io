@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School</title>
+        <script src="scripts/jquery-3.0.0.min.js"></script>
+        <link rel="stylesheet" href="styles/styles.css" type="text/css">
+</head>
+
+<body>
+<!--SIDE BAR -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="teacher-page.html">Teachers</a>
+            <a href="student-page.html">Students</a>
+            <a href="homework-page.html">Homework</a>
+            <a href="resources-page.html">Resources</a>
+            <br><br>
+            <a href="login-form.html">Login</a>
+            <a href="register-form.html">Register</a>
+
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776; open</span>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.1)";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
+
+
+
+<!-- TITLE -->
+
+    <header style="background:url(images/back1.jpg)">
+                <br><br>
+            <div  class="background" >
+                    <div class="wrapper">
+
+                        <a href="../BulgarianVersion/index.html" class="choice">BG</a>
+                        <a href="#" class="choice">EN</a> <br><br>
+                            <div class="login-button" style="outline: 0">
+                                    <a href="login-form.html">LOGIN</a>
+                                    <a href="register-form.html">SIGN IN</a><br><br>
+
+                            </div>
+                    </div>
+
+                    <div class="blog-title">
+                            <h1>MY VIRTUAL SCHOOL</h1>
+                    </div>
+            </div>
+            <div class="buttonsContent">
+                             <a href="#aboutUs">ABOUT US</a>
+                             <a href="#aboutTeachers">TEACHERS</a>
+                <a href="#aboutStudents">STUDENTS</a>
+            </div>
+    </header>
+
+<!--ABOUT US-->
+
+            <div>
+                        <div class="index-page-content" ><a name="aboutUs" style="color:#543925">ABOUT US</a></div>
+                        <img src="images/Icon-set.jpg" class="images-aboutUs">
+                        <p class="text-aboutUs" >
+                            The system " My virtual school " can be
+                            used by both teachers and students.
+                            It would be in great use for all
+                            levels of education in Bulgaria.
+                            After you sign in,you would be
+                            able to see the interesting
+                            modules, an electronic system for homework
+                            and many useful resources.
+
+                        </p>
+            </div>
+
+<!--FOR TEACHERS-->
+
+            <div>
+                       <div  class="index-page-content"><a name="aboutTeachers" style="color:#543925"> FOR TEACHERS  </a></div>
+                        <img src="images/students.png" class="image-teachers">
+
+                        <p class="text-teachers">
+                            <br><br>
+                            Teachers would be able to post
+                            homework for student,see and check their work.
+                            The should take notes and tell the student's mark at
+                            school.
+
+                        </p>
+            </div>
+
+            <div>
+                <div class="index-page-content"> FOR STUDENTS </div>
+                <img src="images/studentss.jpg" class="images-students">
+
+<!--FOR STUDENTS-->
+
+                <p> <a name="aboutStudents" class="text-students">
+                    There are many opportunities for the
+                    students as well. They will be able
+                    to follow the schedule with their
+                    homework, do it on their computers
+                    and then quickly send it
+                    electronically to their teacher.
+                </a> </p>
+            </div>
+
+
+        <footer>
+            (c) W h a t s W r o n g
+        </footer>
+
+ <!--scroll to top button-->
+        <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+
+    <script>
+        $(document).ready(function () {
+            let offset = 220;
+            let duration = 500;
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset) {
+                    $('#scrollToTop').fadeIn(duration);
+                } else {
+                    $('#scrollToTop').fadeOut(duration);
+                }
+            });
+            $('#scrollToTop').click(function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
+
+

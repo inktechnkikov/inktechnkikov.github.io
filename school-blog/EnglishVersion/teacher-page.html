@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School-Profile</title>
+    <link rel="stylesheet" href="styles/style-teacher-page.css" type="text/css">
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/RegisterAndLogin.js"></script>
+    <script src="scripts/teachersSetAndViewHomework.js"></script>
+    <script src="scripts/studentsUploadHomeworks.js"></script>
+</head>
+<body>
+
+<!--NAVIGATION-->
+
+            <header style="background:url(images/teacher.gif)">
+                <div class="buttonsContent">
+                        <a href="base-form.html" id="linkHome" >HOME</a>
+                        <a href="teacher-page.html" id="linkTeachers" class="buttonHome" >TEACHERS</a>
+                        <a href="student-page.html" id="linkStudents" >STUDENTS</a>
+                        <a href="homework-page.html" id="linkHomework">HOMEWORK</a>
+                        <a href="resources-page.html" id="linkResources">RESOURCES</a>
+                        <input type="image" src="images/logout.png" alt="Submit" onclick="logout()"
+                           width="48" height="48"
+                           value="LogOut" title="EXIT">
+                </div>
+                <div >
+<!--TITLES-->
+                        <div class="blog-title">
+
+                                <h1>MY VIRTUAL SCHOOL</h1>
+                        </div>
+                        <h3 class="page-title" >TEACHERS</h3>
+                </div>
+
+        </header>
+
+        <main>
+                <h4>Be SOMEBODY who makes everybody feel like a SOMEBODY.</h4>
+                <p>IF YOU ARE A TEACHER you have the chance to set student's homework.</p>
+
+            <div id="infoTeachers" onclick="$(this).hide()"></div>
+            <div id="errorTeach" onclick="$(this).hide()"></div>
+<!--SET HOMEWORK FORM-->
+
+                <div class="setHomework">
+                    NAME: <input type="text" id="simpleName" required="true" placeholder="name:">
+                    <br><br>
+                    THEME/SUBJECT: <input type="text" id="subject" required="true" placeholder="subject:" >
+                    <br><br>
+                    DESCRIPTION: <textarea type="text" id="dHomeWork" required="true"  > </textarea>
+                    <br>
+                    <span id="msg">(Don't forget to mention the deadline)</span>
+                    <br><br><br><br>
+                    <form id="formSet">
+                    <br>
+                        <button type="button" id="showHomeworkForTeach">Show Homework</button>
+                        <button type="button" id="hide">Hide Homework</button>
+                        <button type="button" onclick="checkFields()">Set Homeworks</button>
+                    </form>
+
+                </div>
+
+                <img src="images/teacher.jpg" class="image">
+        </main>
+
+            <p> HOMEWORK </p>
+
+            <div class="fields" id="field" style="background:url(images/class.jpg)"></div>
+
+<!--FOOTER-->
+         <footer>
+                    Contact us
+                    <br><br>
+                    <div class="footerImg">
+                        <a href="https://github.com/BZIvanov/School-Blog" class="footerImg"> <img src="images/github-512.png"> </a>
+                        <a href="https://www.facebook.com/groups/789752401160176/" class="footerImg"><img src="images/icon-facebook.png"></a>
+                        <a href="https://twitter.com/?request_context=signup " class="footerImg"><img src="images/Twitterbird.png"></a>
+                        <a href="https://plus.google.com/117078375229903786708/posts" class="footerImg"> <img src="images/google-plus-icon.png"></a>
+                    </div>
+          </footer>
+<!--scroll to top button-->
+
+            <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+</body>
+</html>
