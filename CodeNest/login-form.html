@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <script src="lib/jquery-3.0.0.min.js"></script>
+    <script src="scripts/LoginUtility.js"></script>
+</head>
+<body>
+<div class="loginForm">
+    <form id="formLogin">
+        <span class="sectionsForm"> Username: </span>
+        <input type="text" id="loginUser" placeholder="username:" style="font-size: 20pt"><br>
+        <br>
+        <span class="sectionsForm">Password:</span>
+        <input type="password" id="loginPass" placeholder="password:" style="font-size: 20pt" width="35pt"><br>
+        <br><br><br><br>
+        <span class="signInText" class="sectionsForm"><a href="register-form.html"> Sign In </a> </span>
+        <button type="submit" onclick="loginUser()" style="font-size: 20pt" width="25pt">Login</button>
+    </form>
+</div>
+</body>
+</html>

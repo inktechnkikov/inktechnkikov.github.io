@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/chess-game-style.css">
+    <script src="lib/jquery-3.0.0.min.js"></script>
+    <script src="scripts/chessGame.js"></script>
+</head>
+<body onload="fnLoad()">
+<button class="choise"><span>X</span> Turn</button>
+<button class="choise"><span>O</span> Turn</button>
+<div class="container">
+    <div>
+        <select id="grid">
+        </select>
+        <button name="NewGame" class="newGame" value="Start a New Game" onClick="fnNewGame()">Start a New Game</button>
+    </div>
+    <div class="figure">
+        <canvas id="a">
+        </canvas>
+        <div class="minContainer">
+            <table class="row" id="game"></table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
