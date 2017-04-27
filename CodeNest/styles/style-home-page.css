@@ -1,0 +1,27 @@
+#menu{
+    background: #DDD;
+    text-align: center;
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 3px;
+    overflow: auto;
+}
+#menu a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#menu a:hover {
+    background: #BBB;
+}
+section h1 {
+    margin: 10px 0px;
+    font-size: 1.2em;
+}
+footer{
+    background: #DDD;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 3px;
+}

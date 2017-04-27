@@ -43,7 +43,6 @@ function fnChoose(e) {
             prevTurn = turn;
             turn = turn === "X" ? "O" : "X";
             if (fndecide(targetElement, prevTurn)) {
-                line();
                 hide();
             } else if ((score['X'] + score['O']) == (gridValue * gridValue)) {
                 alert('Draw!');

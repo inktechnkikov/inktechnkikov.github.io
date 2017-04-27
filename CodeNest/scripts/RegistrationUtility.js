@@ -2,6 +2,8 @@ const kinveyBaseUrl = 'https://baas.kinvey.com/';
 const kinveyAppId = 'kid_Bkhf1so0x';
 const kinveyAppSecret = '154cc5a94a0547f99b328fd516546d99';
 /* Ajax "Loading" event listener */
+
+sessionStorage.clear();
 $(document).on({
     ajaxStart: function () {
         $('#infoBox').show();
@@ -29,11 +31,19 @@ function ajaxError() {
         else if (password.length <= 4) {
             showInfo("The password must be minimum 4 symbols");
         }
-        else if(emailAddress==""){
-            showInfo("Enter a valid mail address");
+        else if(emailAddress == ""){
+           validateEmailAddress();
         }
         else {
             registerCollectionData();
+        }
+    }
+    function validateEmailAddress() {
+        let emailAddress = $('#emailAddress').val();
+        let atPos = emailAddress.indexOf("@");
+        let dotPos = emailAddress.lastIndexOf(".");
+        if(atPos < 1 || dotPos < atPos+2 || dotPos+2>=emailAddress.length){
+            showInfo("Enter a valid mail address");
         }
     }
     function registerCollectionData() {

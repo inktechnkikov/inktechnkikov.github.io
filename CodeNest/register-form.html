@@ -1,35 +1,38 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register page</title>
-    <link rel="stylesheet" href="styles/register-page-style.css">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles/style-register-form.css" type="text/css">
     <script src="lib/jquery-3.0.0.min.js"></script>
     <script src="scripts/RegistrationUtility.js"></script>
 </head>
+<body>
 <header>
-    <div class="blog-title">
-        <h1><a href="Main.html"> Sea chess </a> </h1>
-    </div>
+    <h1><a href="home.html">Home</a> </h1>
+</header>
     <div class=" divRegisterTitle">
         <div id="infoBox" onclick="$(this).hide()"></div>
-        <div id="errorBox" onclick="$(this).hide()">
-            <h1 class="regiserTitle"> Register </h1>
-        </div>
+      <div id="errorBox" onclick="$(this).hide()"></div>
     </div>
-</header>
-<body>
+
+<!--REGISTER FORM-->
     <div class="registerForm">
         <form id="formRegister">
-            <span style="padding: 0 102px;" class="sectionsForm "> Username:</span>
-            <input type="text" id="userName" placeholder="username:" required = "true"  style="font-size: 20pt"> <br><br>
-            <span style="padding: 0 102px;" class="sectionsForm ">Password:</span>
-            <input type="password" id="passInput" placeholder="password:" required = "true" style="font-size: 20pt"> <br><br>
-            <span style="padding: 0 20px;" class="sectionsForm">Email Address:</span>
-            <input type="email" id="emailAddress" placeholder="Enter a valid email address:" required = "true" style="font-size: 20pt"> <br><br>
+                <span style="padding: 0 102px;" class="sectionsForm "> Username:</span>
+                <input type="text" id="userName" placeholder="username:" required = "true"  style="font-size: 20pt"> <br><br>
+                <span style="padding: 0 102px;" class="sectionsForm ">Password:</span>
+                <input type="password" id="passInput" placeholder="password:" required = "true" style="font-size: 20pt"> <br><br>
+                <span style="padding: 0 20px;" class="sectionsForm">Email:</span>
+                <input type="email" id="emailAddress" placeholder="Enter a valid email:" required = "true" style="font-size: 20pt"> <br><br>
+
+<!--LOGIN-SING IN BUTTONS-->
+
+                <span class="logInText" class="sectionsForm"><a href="login-form.html"> Log In </a> </span>
+                <button type="button" onclick="registerUser()" style="font-size: 20pt" width="25pt">Sign In</button>
         </form>
     </div>
-    <button type="button" onclick="registerUser()" style="font-size: 20pt">Sign in</button>
 
 </body>
 </html>
+
